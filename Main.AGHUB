@@ -1,0 +1,939 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local AGHUB = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local TOP = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local ImageLabel = Instance.new("ImageLabel")
+local Close = Instance.new("TextButton")
+local Minimize = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local container = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Main_2 = Instance.new("TextButton")
+local Misc = Instance.new("TextButton")
+local Scripts = Instance.new("TextButton")
+local MainBTTFRame = Instance.new("Frame")
+local info = Instance.new("Frame")
+local API = Instance.new("TextLabel")
+local VER = Instance.new("TextLabel")
+local Vercion = Instance.new("TextLabel")
+local VER_2 = Instance.new("TextLabel")
+local Fly = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Noclip = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local MiscBTTFrame = Instance.new("Frame")
+local announcement = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local ScriptBTTFrame = Instance.new("Frame")
+local Intro = Instance.new("Frame")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local a = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local B = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+
+--Properties:
+
+AGHUB.Name = "AGHUB"
+AGHUB.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+AGHUB.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = AGHUB
+Main.BackgroundColor3 = Color3.fromRGB(23, 23, 23)
+Main.Position = UDim2.new(0.362004936, 0, 0.379022658, 0)
+Main.Size = UDim2.new(0, 657, 0, 307)
+
+TOP.Name = "TOP"
+TOP.Parent = Main
+TOP.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+TOP.Size = UDim2.new(0, 657, 0, 35)
+
+UICorner.Parent = TOP
+
+ImageLabel.Parent = TOP
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Size = UDim2.new(0, 47, 0, 35)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=7617821614"
+
+Close.Name = "Close"
+Close.Parent = TOP
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 0.990
+Close.Position = UDim2.new(0.949771702, 0, 0, 0)
+Close.Size = UDim2.new(0, 33, 0, 35)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 20.000
+
+Minimize.Name = "Minimize"
+Minimize.Parent = TOP
+Minimize.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.BackgroundTransparency = 1.000
+Minimize.Position = UDim2.new(0.911719918, 0, 0, 0)
+Minimize.Size = UDim2.new(0, 34, 0, 32)
+Minimize.Font = Enum.Font.SourceSans
+Minimize.Text = "-"
+Minimize.TextColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.TextSize = 40.000
+
+UICorner_2.Parent = Main
+
+container.Name = "container"
+container.Parent = Main
+container.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+container.Position = UDim2.new(0.0289193299, 0, 0.166123778, 0)
+container.Size = UDim2.new(0, 129, 0, 237)
+
+UICorner_3.Parent = container
+
+Main_2.Name = "Main"
+Main_2.Parent = container
+Main_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main_2.BackgroundTransparency = 1.000
+Main_2.BorderColor3 = Color3.fromRGB(27, 0, 16)
+Main_2.BorderSizePixel = 12
+Main_2.Position = UDim2.new(0, 0, 0.0506329127, 0)
+Main_2.Size = UDim2.new(0, 129, 0, 37)
+Main_2.Font = Enum.Font.SciFi
+Main_2.Text = "Main"
+Main_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Main_2.TextSize = 14.000
+
+Misc.Name = "Misc"
+Misc.Parent = container
+Misc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Misc.BackgroundTransparency = 1.000
+Misc.Position = UDim2.new(0, 0, 0.194092825, 0)
+Misc.Size = UDim2.new(0, 129, 0, 37)
+Misc.Font = Enum.Font.SciFi
+Misc.Text = "Misc"
+Misc.TextColor3 = Color3.fromRGB(255, 255, 255)
+Misc.TextSize = 14.000
+
+Scripts.Name = "Scripts"
+Scripts.Parent = container
+Scripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scripts.BackgroundTransparency = 1.000
+Scripts.Position = UDim2.new(0, 0, 0.350210994, 0)
+Scripts.Size = UDim2.new(0, 129, 0, 37)
+Scripts.Font = Enum.Font.SciFi
+Scripts.Text = "Scripts"
+Scripts.TextColor3 = Color3.fromRGB(255, 255, 255)
+Scripts.TextSize = 14.000
+
+MainBTTFRame.Name = "MainBTTFRame"
+MainBTTFRame.Parent = container
+MainBTTFRame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+MainBTTFRame.Position = UDim2.new(1.19379842, 0, 0.018930316, 0)
+MainBTTFRame.Size = UDim2.new(0, 451, 0, 232)
+MainBTTFRame.Visible = false
+
+info.Name = "info"
+info.Parent = MainBTTFRame
+info.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+info.BorderColor3 = Color3.fromRGB(9, 73, 88)
+info.BorderSizePixel = 2
+info.Position = UDim2.new(-0.000205755234, 0, -0.000363742933, 0)
+info.Size = UDim2.new(0, 120, 0, 107)
+
+API.Name = "API"
+API.Parent = info
+API.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+API.BackgroundTransparency = 1.000
+API.Position = UDim2.new(0.0622320771, 0, 0.407950372, 0)
+API.Size = UDim2.new(0, 104, 0, 32)
+API.Font = Enum.Font.GothamSemibold
+API.Text = "API"
+API.TextColor3 = Color3.fromRGB(255, 255, 255)
+API.TextSize = 14.000
+
+VER.Name = "VER"
+VER.Parent = API
+VER.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VER.BackgroundTransparency = 1.000
+VER.Position = UDim2.new(0, 0, 0.679956913, 0)
+VER.Size = UDim2.new(0, 104, 0, 32)
+VER.Font = Enum.Font.GothamSemibold
+VER.Text = "RBLX Killer V2"
+VER.TextColor3 = Color3.fromRGB(255, 255, 255)
+VER.TextSize = 10.000
+
+Vercion.Name = "Vercion"
+Vercion.Parent = info
+Vercion.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vercion.BackgroundTransparency = 1.000
+Vercion.Position = UDim2.new(0.0666666701, 0, 0.0747663528, 0)
+Vercion.Size = UDim2.new(0, 104, 0, 32)
+Vercion.Font = Enum.Font.GothamSemibold
+Vercion.Text = "Version"
+Vercion.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vercion.TextSize = 14.000
+
+VER_2.Name = "VER"
+VER_2.Parent = Vercion
+VER_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VER_2.BackgroundTransparency = 1.000
+VER_2.Position = UDim2.new(0, 0, 0.554956913, 0)
+VER_2.Size = UDim2.new(0, 104, 0, 32)
+VER_2.Font = Enum.Font.GothamSemibold
+VER_2.Text = "V0.1.4"
+VER_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+VER_2.TextSize = 10.000
+
+Fly.Name = "Fly"
+Fly.Parent = MainBTTFRame
+Fly.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Fly.Position = UDim2.new(0.299334794, 0, 0.672413588, 0)
+Fly.Size = UDim2.new(0, 134, 0, 37)
+Fly.Font = Enum.Font.GothamSemibold
+Fly.Text = "Fly"
+Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fly.TextSize = 14.000
+
+UICorner_4.Parent = Fly
+
+Noclip.Name = "Noclip"
+Noclip.Parent = MainBTTFRame
+Noclip.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Noclip.Position = UDim2.new(0.647450089, 0, 0.672413588, 0)
+Noclip.Size = UDim2.new(0, 134, 0, 37)
+Noclip.Font = Enum.Font.GothamSemibold
+Noclip.Text = "Noclip"
+Noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.TextSize = 14.000
+
+UICorner_5.Parent = Noclip
+
+MiscBTTFrame.Name = "MiscBTTFrame"
+MiscBTTFrame.Parent = container
+MiscBTTFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+MiscBTTFrame.Position = UDim2.new(1.19379842, 0, 0.00855285581, 0)
+MiscBTTFrame.Size = UDim2.new(0, 451, 0, 232)
+
+announcement.Name = "announcement"
+announcement.Parent = MiscBTTFrame
+announcement.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+announcement.BackgroundTransparency = 1.000
+announcement.Position = UDim2.new(0, 0, 0.314655185, 0)
+announcement.Size = UDim2.new(0, 451, 0, 50)
+announcement.Font = Enum.Font.GothamSemibold
+announcement.Text = "AG Hub is in Development"
+announcement.TextColor3 = Color3.fromRGB(255, 255, 255)
+announcement.TextSize = 30.000
+
+TextButton.Parent = MiscBTTFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TextButton.Position = UDim2.new(0.339246124, 0, 0.556034446, 0)
+TextButton.Size = UDim2.new(0, 145, 0, 40)
+TextButton.Font = Enum.Font.Ubuntu
+TextButton.Text = "Discord Invite"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 20.000
+
+UICorner_6.Parent = TextButton
+
+ScriptBTTFrame.Name = "ScriptBTTFrame"
+ScriptBTTFrame.Parent = container
+ScriptBTTFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+ScriptBTTFrame.Position = UDim2.new(1.19379842, 0, 0.0169917345, 0)
+ScriptBTTFrame.Size = UDim2.new(0, 451, 0, 232)
+ScriptBTTFrame.Visible = false
+
+Intro.Name = "Intro"
+Intro.Parent = AGHUB
+Intro.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Intro.Position = UDim2.new(0.415841609, 0, 0.462455302, 0)
+Intro.Size = UDim2.new(0, 318, 0, 169)
+Intro.Visible = false
+
+ImageLabel_2.Parent = Intro
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.Position = UDim2.new(0.179245278, 0, 0, 0)
+ImageLabel_2.Size = UDim2.new(0, 203, 0, 112)
+ImageLabel_2.Image = "http://www.roblox.com/asset/?id=7617821614"
+
+a.Name = "a"
+a.Parent = Intro
+a.BackgroundColor3 = Color3.fromRGB(25, 24, 24)
+a.Position = UDim2.new(0.0786163509, 0, 0.881656826, 0)
+a.Size = UDim2.new(0, 264, 0, 8)
+
+UICorner_7.Parent = a
+
+B.Name = "B"
+B.Parent = Intro
+B.BackgroundColor3 = Color3.fromRGB(71, 197, 255)
+B.Position = UDim2.new(0.0786163509, 0, 0.881656826, 0)
+B.Size = UDim2.new(0, 264, 0, 8)
+
+UICorner_8.Parent = B
+
+-- Scripts:
+
+local function WQJEQSF_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
+
+	local Logo = script.Parent
+	
+	
+end
+coroutine.wrap(WQJEQSF_fake_script)()
+local function JODAIEI_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent:Destroy()
+	end
+	)
+end
+coroutine.wrap(JODAIEI_fake_script)()
+local function FGSZZA_fake_script() -- Main_2.LocalScript 
+	local script = Instance.new('LocalScript', Main_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.MainBTTFRame.Visible = true
+		script.Parent.Parent.MiscBTTFrame.Visible = false
+		script.Parent.Parent.ScriptBTTFrame.Visible = false
+	end
+	)
+end
+coroutine.wrap(FGSZZA_fake_script)()
+local function CAVQRYE_fake_script() -- Misc.LocalScript 
+	local script = Instance.new('LocalScript', Misc)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.MainBTTFRame.Visible = false
+		script.Parent.Parent.MiscBTTFrame.Visible = true
+		script.Parent.Parent.ScriptBTTFrame.Visible = false
+	end
+	)
+end
+coroutine.wrap(CAVQRYE_fake_script)()
+local function PKZEUXB_fake_script() -- Scripts.LocalScript 
+	local script = Instance.new('LocalScript', Scripts)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.MainBTTFRame.Visible = false
+		script.Parent.Parent.MiscBTTFrame.Visible = false
+		script.Parent.Parent.ScriptBTTFrame.Visible = true
+	end
+	)
+end
+coroutine.wrap(PKZEUXB_fake_script)()
+local function UUCG_fake_script() -- VER.LocalScript 
+	local script = Instance.new('LocalScript', VER)
+
+	
+	
+	local function getexploit()
+		local exploit =
+			(syn and not is_sirhurt_closure and not pebc_execute and "Synapse X") or
+			(isexecutorclosure and "Script-Ware V2") or
+			(secure_load and "Sentinel") or
+			(is_sirhurt_closure and "SirHurt V4") or
+			(pebc_execute and "ProtoSmasher") or
+			(KRNL_LOADED and "Krnl") or
+			(shadow_env and "Shadow") or
+			(WrapGlobal and "WeAreDevs") or
+			(isvm and "Proxo") or
+			(shadow_env and "Shadow") or
+			(jit and "EasyExploits") or
+			(IsElectron and "Electron") or
+			(unit and "Unit") or
+			(IS_Studio and "Roblox Studio") or
+			("Unknown");
+		return exploit
+	end
+	
+	AGExploit = "the best exploit"
+	script.Parent.Text = getexploit()
+end
+coroutine.wrap(UUCG_fake_script)()
+local function DDVLKF_fake_script() -- Fly.FlyScript 
+	local script = Instance.new('LocalScript', Fly)
+
+	repeat wait() 
+	until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Head") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid") 
+	local mouse = game.Players.LocalPlayer:GetMouse() 
+	repeat wait() until mouse
+	local plr = game.Players.LocalPlayer 
+	local torso = plr.Character.Head 
+	local flying = false
+	local deb = true 
+	local ctrl = {f = 0, b = 0, l = 0, r = 0} 
+	local lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+	local maxspeed = 50 
+	local speed = 0 
+	
+	function Fly() 
+		local bg = Instance.new("BodyGyro", torso) 
+		bg.P = 9e4 
+		bg.maxTorque = Vector3.new(9e9, 9e9, 9e9) 
+		bg.cframe = torso.CFrame 
+		local bv = Instance.new("BodyVelocity", torso) 
+		bv.velocity = Vector3.new(0,0.1,0) 
+		bv.maxForce = Vector3.new(9e9, 9e9, 9e9) 
+		repeat wait() 
+			plr.Character.Humanoid.PlatformStand = true 
+			if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then 
+				speed = speed+.5+(speed/maxspeed) 
+				if speed > maxspeed then 
+					speed = maxspeed 
+				end 
+			elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then 
+				speed = speed-1 
+				if speed < 0 then 
+					speed = 0 
+				end 
+			end 
+			if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then 
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+				lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r} 
+			elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then 
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+			else 
+				bv.velocity = Vector3.new(0,0.1,0) 
+			end 
+			bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0) 
+		until not flying 
+		ctrl = {f = 0, b = 0, l = 0, r = 0} 
+		lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+		speed = 0 
+		bg:Destroy() 
+		bv:Destroy() 
+		plr.Character.Humanoid.PlatformStand = false 
+	end 
+	
+	kaging = true
+	script.Parent.MouseButton1Click:Connect(function() 
+		mouse.KeyDown:connect(function(key) 
+			if key:lower() == "e" then 
+				if flying then flying = false 
+				else 
+					flying = true 
+					Fly() 
+				end 
+			elseif key:lower() == "w" then 
+				ctrl.f = 1 
+			elseif key:lower() == "s" then 
+				ctrl.b = -1 
+			elseif key:lower() == "a" then 
+				ctrl.l = -1 
+			elseif key:lower() == "d" then 
+				ctrl.r = 1 
+			end 
+		end) 
+		mouse.KeyUp:connect(function(key) 
+			if key:lower() == "w" then 
+				ctrl.f = 0 
+			elseif key:lower() == "s" then 
+				ctrl.b = 0 
+			elseif key:lower() == "a" then 
+				ctrl.l = 0 
+			elseif key:lower() == "d" then 
+				ctrl.r = 0 
+			end 
+		end)
+	end)
+	
+	
+	Fly()
+	
+	
+	
+	
+	
+end
+coroutine.wrap(DDVLKF_fake_script)()
+local function UJGDFQI_fake_script() -- MainBTTFRame.FlySpeed 
+	local script = Instance.new('LocalScript', MainBTTFRame)
+
+	Home = script.Parent
+	function addSlider(slidername,minvalue,maxvalue,callback)
+		local SliderHolder = Instance.new("Frame")
+		local SliderHolderScript = Instance.new("UICorner")
+		local SliderTitle = Instance.new("TextLabel")
+		local SliderNumber = Instance.new("TextLabel")
+		local SliderButton = Instance.new("TextButton")
+		local UICorner = Instance.new("UICorner")
+		local SliderTrail = Instance.new("Frame")
+		local SliderTrailCorner = Instance.new("UICorner")
+	
+		--Properties:
+	
+		SliderHolder.Name = "SliderHolder"
+		SliderHolder.Parent = Home
+		SliderHolder.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+		SliderHolder.BorderSizePixel = 0
+		SliderHolder.Position = UDim2.new(0.290465623, 0, 0.456896544, 0)
+		SliderHolder.Size = UDim2.new(0, 299, 0, 37)
+	
+		SliderHolderScript.Name = "SliderHolderScript"
+		SliderHolderScript.Parent = SliderHolder
+	
+		SliderTitle.Name = "SliderTitle"
+		SliderTitle.Parent = SliderHolder
+		SliderTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		SliderTitle.BackgroundTransparency = 1.000
+		SliderTitle.Position = UDim2.new(-0.0167224072, 0, 0, 0)
+		SliderTitle.Size = UDim2.new(0, 99, 0, 18)
+		SliderTitle.Font = Enum.Font.GothamSemibold
+		SliderTitle.Text = slidername
+		SliderTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+		SliderTitle.TextSize = 14.000
+	
+		SliderNumber.Name = "SliderNumber"
+		SliderNumber.Parent = SliderHolder
+		SliderNumber.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		SliderNumber.BackgroundTransparency = 1.000
+		SliderNumber.Position = UDim2.new(0.548494995, 0, -0.35135138, 0)
+		SliderNumber.Size = UDim2.new(0, 200, 0, 50)
+		SliderNumber.Font = Enum.Font.Gotham
+		SliderNumber.Text = minvalue or "0"
+		SliderNumber.TextColor3 = Color3.fromRGB(255, 255, 255)
+		SliderNumber.TextSize = 10.000
+	
+		SliderButton.Name = "SliderButton"
+		SliderButton.Parent = SliderHolder
+		SliderButton.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+		SliderButton.Position = UDim2.new(0.0501672253, 0, 0.576576829, 0)
+		SliderButton.Size = UDim2.new(0, 273, 0, 7)
+		SliderButton.Font = Enum.Font.SourceSans
+		SliderButton.Text = ""
+		SliderButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+		SliderButton.TextSize = 14.000
+	
+		UICorner.Parent = SliderButton
+	
+		SliderTrail.Name = "SliderTrail"
+		SliderTrail.Parent = SliderButton
+		SliderTrail.BackgroundColor3 = Color3.fromRGB(255, 164, 7)
+		SliderTrail.Size = UDim2.new(0, 273, 0, 6)
+	
+		SliderTrailCorner.Name = "SliderTrailCorner"
+		SliderTrailCorner.Parent = SliderTrail
+		
+		local mouse = game.Players.LocalPlayer:GetMouse()
+		local uis = game:GetService("UserInputService")
+		local Value;
+	
+		SliderButton.MouseButton1Down:Connect(function()
+			Value = math.floor((((tonumber(maxvalue) - tonumber(minvalue)) / 273) *SliderTrail.AbsoluteSize.X) + tonumber(minvalue)) or 0
+			callback(SliderNumber.Text)
+			SliderTrail.Size = UDim2.new(0, math.clamp(mouse.X - SliderTrail.AbsolutePosition.X, 0, 273), 0, 7)
+			moveconnection = mouse.Move:Connect(function()
+				SliderNumber.Text = Value
+				Value = math.floor((((tonumber(maxvalue) - tonumber(minvalue)) / 273) * SliderTrail.AbsoluteSize.X) + tonumber(minvalue))
+				callback(SliderNumber.Text)
+				SliderHolder.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+				SliderTrail.Size = UDim2.new(0, math.clamp(mouse.X - SliderTrail.AbsolutePosition.X, 0, 273), 0, 7)
+			end)
+			releaseconnection = uis.InputEnded:Connect(function(Mouse)
+				if Mouse.UserInputType == Enum.UserInputType.MouseButton1 then
+					Value = math.floor((((tonumber(maxvalue) - tonumber(minvalue)) / 273) * SliderTrail.AbsoluteSize.X) + tonumber(minvalue))
+					callback(SliderNumber.Text)
+					SliderHolder.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+					SliderTrail.Size = UDim2.new(0, math.clamp(mouse.X - SliderTrail.AbsolutePosition.X, 0, 273), 0, 7)
+					moveconnection:Disconnect()
+					releaseconnection:Disconnect()
+				end
+			end)
+		end)
+	end
+	
+	addSlider("FlySpeed",1,16,function(Flspeed)
+		print(Flspeed)
+	end)
+	
+	
+end
+coroutine.wrap(UJGDFQI_fake_script)()
+local function SKRPRDC_fake_script() -- MainBTTFRame.JumpPowe 
+	local script = Instance.new('LocalScript', MainBTTFRame)
+
+	Home = script.Parent
+	function addSlider(slidername,minvalue,maxvalue,callback)
+		local SliderHolder = Instance.new("Frame")
+		local SliderHolderScript = Instance.new("UICorner")
+		local SliderTitle = Instance.new("TextLabel")
+		local SliderNumber = Instance.new("TextLabel")
+		local SliderButton = Instance.new("TextButton")
+		local UICorner = Instance.new("UICorner")
+		local SliderTrail = Instance.new("Frame")
+		local SliderTrailCorner = Instance.new("UICorner")
+	
+		--Properties:
+	
+		SliderHolder.Name = "SliderHolder"
+		SliderHolder.Parent = Home
+		SliderHolder.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+		SliderHolder.BorderSizePixel = 0
+		SliderHolder.Position = UDim2.new(0.295, 0, 0.246, 0)
+		SliderHolder.Size = UDim2.new(0, 299, 0, 37)
+	
+		SliderHolderScript.Name = "SliderHolderScript"
+		SliderHolderScript.Parent = SliderHolder
+	
+		SliderTitle.Name = "SliderTitle"
+		SliderTitle.Parent = SliderHolder
+		SliderTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		SliderTitle.BackgroundTransparency = 1.000
+		SliderTitle.Position = UDim2.new(-0.0167224072, 0, 0, 0)
+		SliderTitle.Size = UDim2.new(0, 99, 0, 18)
+		SliderTitle.Font = Enum.Font.GothamSemibold
+		SliderTitle.Text = slidername
+		SliderTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+		SliderTitle.TextSize = 14.000
+	
+		SliderNumber.Name = "SliderNumber"
+		SliderNumber.Parent = SliderHolder
+		SliderNumber.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		SliderNumber.BackgroundTransparency = 1.000
+		SliderNumber.Position = UDim2.new(0.548494995, 0, -0.35135138, 0)
+		SliderNumber.Size = UDim2.new(0, 200, 0, 50)
+		SliderNumber.Font = Enum.Font.Gotham
+		SliderNumber.Text = minvalue or "0"
+		SliderNumber.TextColor3 = Color3.fromRGB(255, 255, 255)
+		SliderNumber.TextSize = 10.000
+	
+		SliderButton.Name = "SliderButton"
+		SliderButton.Parent = SliderHolder
+		SliderButton.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+		SliderButton.Position = UDim2.new(0.0501672253, 0, 0.576576829, 0)
+		SliderButton.Size = UDim2.new(0, 273, 0, 7)
+		SliderButton.Font = Enum.Font.SourceSans
+		SliderButton.Text = ""
+		SliderButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+		SliderButton.TextSize = 14.000
+	
+		UICorner.Parent = SliderButton
+	
+		SliderTrail.Name = "SliderTrail"
+		SliderTrail.Parent = SliderButton
+		SliderTrail.BackgroundColor3 = Color3.fromRGB(66, 255, 24)
+		SliderTrail.Size = UDim2.new(0, 273, 0, 6)
+	
+		SliderTrailCorner.Name = "SliderTrailCorner"
+		SliderTrailCorner.Parent = SliderTrail
+		
+		local mouse = game.Players.LocalPlayer:GetMouse()
+		local uis = game:GetService("UserInputService")
+		local Value;
+	
+		SliderButton.MouseButton1Down:Connect(function()
+			Value = math.floor((((tonumber(maxvalue) - tonumber(minvalue)) / 273) *SliderTrail.AbsoluteSize.X) + tonumber(minvalue)) or 0
+			callback(SliderNumber.Text)
+			SliderTrail.Size = UDim2.new(0, math.clamp(mouse.X - SliderTrail.AbsolutePosition.X, 0, 273), 0, 7)
+			moveconnection = mouse.Move:Connect(function()
+				SliderNumber.Text = Value
+				Value = math.floor((((tonumber(maxvalue) - tonumber(minvalue)) / 273) * SliderTrail.AbsoluteSize.X) + tonumber(minvalue))
+				callback(SliderNumber.Text)
+				SliderHolder.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+				SliderTrail.Size = UDim2.new(0, math.clamp(mouse.X - SliderTrail.AbsolutePosition.X, 0, 273), 0, 7)
+			end)
+			releaseconnection = uis.InputEnded:Connect(function(Mouse)
+				if Mouse.UserInputType == Enum.UserInputType.MouseButton1 then
+					Value = math.floor((((tonumber(maxvalue) - tonumber(minvalue)) / 273) * SliderTrail.AbsoluteSize.X) + tonumber(minvalue))
+					callback(SliderNumber.Text)
+					SliderHolder.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+					SliderTrail.Size = UDim2.new(0, math.clamp(mouse.X - SliderTrail.AbsolutePosition.X, 0, 273), 0, 7)
+					moveconnection:Disconnect()
+					releaseconnection:Disconnect()
+				end
+			end)
+		end)
+	end
+	
+	addSlider("JumpPower",50,250,function(JP)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = JP
+	end)
+	
+	
+end
+coroutine.wrap(SKRPRDC_fake_script)()
+local function DBOLF_fake_script() -- MainBTTFRame.WalkSpeed 
+	local script = Instance.new('LocalScript', MainBTTFRame)
+
+	Home = script.Parent
+	function addSlider(slidername,minvalue,maxvalue,callback)
+		local SliderHolder = Instance.new("Frame")
+		local SliderHolderScript = Instance.new("UICorner")
+		local SliderTitle = Instance.new("TextLabel")
+		local SliderNumber = Instance.new("TextLabel")
+		local SliderButton = Instance.new("TextButton")
+		local UICorner = Instance.new("UICorner")
+		local SliderTrail = Instance.new("Frame")
+		local SliderTrailCorner = Instance.new("UICorner")
+	
+		--Properties:
+	
+		SliderHolder.Name = "SliderHolder"
+		SliderHolder.Parent = Home
+		SliderHolder.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+		SliderHolder.BorderSizePixel = 0
+		SliderHolder.Position = UDim2.new(0.295, 0, 0.03, 0)
+		SliderHolder.Size = UDim2.new(0, 299, 0, 37)
+	
+		SliderHolderScript.Name = "SliderHolderScript"
+		SliderHolderScript.Parent = SliderHolder
+	
+		SliderTitle.Name = "SliderTitle"
+		SliderTitle.Parent = SliderHolder
+		SliderTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		SliderTitle.BackgroundTransparency = 1.000
+		SliderTitle.Position = UDim2.new(-0.0167224072, 0, 0, 0)
+		SliderTitle.Size = UDim2.new(0, 99, 0, 18)
+		SliderTitle.Font = Enum.Font.GothamSemibold
+		SliderTitle.Text = slidername
+		SliderTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+		SliderTitle.TextSize = 14.000
+	
+		SliderNumber.Name = "SliderNumber"
+		SliderNumber.Parent = SliderHolder
+		SliderNumber.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		SliderNumber.BackgroundTransparency = 1.000
+		SliderNumber.Position = UDim2.new(0.548494995, 0, -0.35135138, 0)
+		SliderNumber.Size = UDim2.new(0, 200, 0, 50)
+		SliderNumber.Font = Enum.Font.Gotham
+		SliderNumber.Text = minvalue or "0"
+		SliderNumber.TextColor3 = Color3.fromRGB(255, 255, 255)
+		SliderNumber.TextSize = 10.000
+	
+		SliderButton.Name = "SliderButton"
+		SliderButton.Parent = SliderHolder
+		SliderButton.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+		SliderButton.Position = UDim2.new(0.0501672253, 0, 0.576576829, 0)
+		SliderButton.Size = UDim2.new(0, 273, 0, 7)
+		SliderButton.Font = Enum.Font.SourceSans
+		SliderButton.Text = ""
+		SliderButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+		SliderButton.TextSize = 14.000
+	
+		UICorner.Parent = SliderButton
+	
+		SliderTrail.Name = "SliderTrail"
+		SliderTrail.Parent = SliderButton
+		SliderTrail.BackgroundColor3 = Color3.fromRGB(30, 14, 255)
+		SliderTrail.Size = UDim2.new(0, 273, 0, 6)
+	
+		SliderTrailCorner.Name = "SliderTrailCorner"
+		SliderTrailCorner.Parent = SliderTrail
+		
+		local mouse = game.Players.LocalPlayer:GetMouse()
+		local uis = game:GetService("UserInputService")
+		local Value;
+	
+		SliderButton.MouseButton1Down:Connect(function()
+			Value = math.floor((((tonumber(maxvalue) - tonumber(minvalue)) / 273) *SliderTrail.AbsoluteSize.X) + tonumber(minvalue)) or 0
+			callback(SliderNumber.Text)
+			SliderTrail.Size = UDim2.new(0, math.clamp(mouse.X - SliderTrail.AbsolutePosition.X, 0, 273), 0, 7)
+			moveconnection = mouse.Move:Connect(function()
+				SliderNumber.Text = Value
+				Value = math.floor((((tonumber(maxvalue) - tonumber(minvalue)) / 273) * SliderTrail.AbsoluteSize.X) + tonumber(minvalue))
+				callback(SliderNumber.Text)
+				SliderHolder.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+				SliderTrail.Size = UDim2.new(0, math.clamp(mouse.X - SliderTrail.AbsolutePosition.X, 0, 273), 0, 7)
+			end)
+			releaseconnection = uis.InputEnded:Connect(function(Mouse)
+				if Mouse.UserInputType == Enum.UserInputType.MouseButton1 then
+					Value = math.floor((((tonumber(maxvalue) - tonumber(minvalue)) / 273) * SliderTrail.AbsoluteSize.X) + tonumber(minvalue))
+					callback(SliderNumber.Text)
+					SliderHolder.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+					SliderTrail.Size = UDim2.new(0, math.clamp(mouse.X - SliderTrail.AbsolutePosition.X, 0, 273), 0, 7)
+					moveconnection:Disconnect()
+					releaseconnection:Disconnect()
+				end
+			end)
+		end)
+	end
+	
+	addSlider("WalkSpeed",16,300,function(WS)
+		_G.HackedWalkSpeed = WS
+	
+		local Plrs = game:GetService("Players")
+	
+		local MyPlr = Plrs.LocalPlayer
+		local MyChar = MyPlr.Character
+	
+		if MyChar then
+			local Hum = MyChar.Humanoid
+			Hum.Changed:connect(function()
+				Hum.WalkSpeed = _G.HackedWalkSpeed
+			end)
+			Hum.WalkSpeed = _G.HackedWalkSpeed
+		end
+	
+	
+		MyPlr.CharacterAdded:connect(function(Char)
+			MyChar = Char
+			repeat wait() until Char:FindFirstChild("Humanoid")
+			local Hum = Char.Humanoid
+			Hum.Changed:connect(function()
+				Hum.WalkSpeed = _G.HackedWalkSpeed
+			end)
+			Hum.WalkSpeed = _G.HackedWalkSpeed
+		end)
+	end)
+	
+	
+end
+coroutine.wrap(DBOLF_fake_script)()
+local function ZOMN_fake_script() -- Noclip.NoclipScript 
+	local script = Instance.new('LocalScript', Noclip)
+
+	noclip = false
+	
+	plr = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		if not nocliploaded then
+		wait(1)
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "AG Hub";
+			Text = "Press C to noclip";
+			Icon = "http://www.roblox.com/asset/?id=7617821614";
+			Duration = "40";
+		})
+		
+		game:GetService('RunService').Stepped:connect(function()
+			if noclip then
+				game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+			end
+		end)
+		plr = game.Players.LocalPlayer
+		mouse = plr:GetMouse()
+		mouse.KeyDown:connect(function(key)
+	
+			if key == "c" then
+				noclip = not noclip
+				game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+			end
+		end)
+		print('Loaded')
+			print('Press "c" to noclip')
+			nocliploaded = true
+		end
+	end)
+	
+	
+end
+coroutine.wrap(ZOMN_fake_script)()
+local function ZBNQB_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	function coverscreen(value)
+		print(value)
+		print(value)
+		print(value)
+		print(value)
+		print(value)
+		print(value)
+		print(value)
+		print(value)
+		print(value)
+		print(value)
+		print(value)
+		
+		local ScreenGui = Instance.new("ScreenGui")
+		local TextLabel = Instance.new("TextLabel")
+	
+		--Properties:
+	
+		ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+		ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	
+		TextLabel.Parent = ScreenGui
+		TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel.Size = UDim2.new(0, 1616, 0, 839)
+		TextLabel.Font = Enum.Font.GothamSemibold
+		TextLabel.Text = value
+		TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+		TextLabel.TextSize = 80.000
+		
+		wait(7)
+		ScreenGui:Destroy()
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		coverscreen("Join ElAriel2.0 Discord")
+		setclipboard("https://discord.gg/e5n93qBCyb")
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "AG Hub";
+			Text = "Invite Copied To The Clipboard";
+			Icon = "http://www.roblox.com/asset/?id=7617821614";
+			Duration = "40";
+		})
+	end)
+end
+coroutine.wrap(ZBNQB_fake_script)()
+local function ELVKE_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	local dragger = {}
+	local resizer = {}
+	local mouse = game:GetService("Players").LocalPlayer:GetMouse();
+	local inputService = game:GetService('UserInputService');
+	local heartbeat = game:GetService("RunService").Heartbeat;
+	-- // credits to Ririchi / Inori for this cute drag function :)
+	function dragger.new(frame)
+		local s, event = pcall(function()
+			return frame.MouseEnter
+		end)
+	
+		if s then
+			frame.Active = true;
+	
+			event:connect(function()
+				local input = frame.InputBegan:connect(function(key)
+					if key.UserInputType == Enum.UserInputType.MouseButton1 then
+						local objectPosition = Vector2.new(mouse.X - frame.AbsolutePosition.X, mouse.Y - frame.AbsolutePosition.Y);
+						while heartbeat:wait() and inputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) do
+							frame:TweenPosition(UDim2.new(0, mouse.X - objectPosition.X + (frame.Size.X.Offset * frame.AnchorPoint.X), 0, mouse.Y - objectPosition.Y + (frame.Size.Y.Offset * frame.AnchorPoint.Y)), 'Out', 'Quad', 0.1, true);
+						end
+					end
+				end)
+	
+				local leave;
+				leave = frame.MouseLeave:connect(function()
+					input:disconnect();
+					leave:disconnect();
+				end)
+			end)
+		end
+	end
+	
+	function resizer.new(p, s)
+		p:GetPropertyChangedSignal('AbsoluteSize'):connect(function()
+			s.Size = UDim2.new(s.Size.X.Scale, s.Size.X.Offset, s.Size.Y.Scale, p.AbsoluteSize.Y);
+		end)
+	end
+	dragger.new(script.Parent)
+end
+coroutine.wrap(ELVKE_fake_script)()
+local function CLDPY_fake_script() -- ImageLabel_2.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel_2)
+
+	IMG = script.Parent
+	A = script.Parent.Parent.a
+	B = script.Parent.Parent.B
+	I = script.Parent.Parent.Parent.Main
+	IMG:TweenSize(UDim2.new(0, 233, 0, 121),"In","Quad",1,false)
+	IMG:TweenPosition(UDim2.new(0.179, 0,0, 0),"In","Quad",0.5,false)
+	wait(0.5)
+	A.Visible = true
+	B.Visible = true
+	wait(4)
+	I.Visible = true
+	script.Parent.Parent:Destroy()
+end
+coroutine.wrap(CLDPY_fake_script)()
