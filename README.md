@@ -4,6 +4,26 @@
 the especial hub for agexploit
 
 #### Updates
+- V 0.4.5
+
+```
+Changelog
+  Gui Animtions
+  Universal Scripts
+ 
+ Planned updates:
+  Ranks
+  Game Script Detect
+  More features
+  
+ Dev Notes:
+   The EasyExploits api i not detected
+    the universal script 1 dosent works
+    use ag exploit
+
+credits To Soyandrey(tu<3¿#8275) ad PascalHacks Dev Team
+```
+ 
 - V 0.4.1
 
 ```
