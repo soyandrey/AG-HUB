@@ -1,4 +1,6 @@
 # AG-HUB
+[![Build Status](https://img.shields.io/github/forks/soyandrey/AG-HUB.svg?style=for-the-badge)](https://github.com/soyandrey/AG-HUB)
+[![Build Status](https://img.shields.io/github/stars/soyandrey/AG-HUB.svg?style=for-the-badge)](https://github.com/soyandrey/AG-HUB)
 ## on development
 
 the especial hub for agexploit
