@@ -2,7 +2,7 @@
 [![Build Status](https://img.shields.io/github/forks/soyandrey/AG-HUB.svg?style=for-the-badge)](https://github.com/soyandrey/AG-HUB)
 [![Build Status](https://img.shields.io/github/stars/soyandrey/AG-HUB.svg?style=for-the-badge)](https://github.com/soyandrey/AG-HUB)
 [![jkl - Bar](https://img.shields.io/badge/Status-On_DEvelopment-2ea44f?style=for-the-badge)](https://)
-![Version - 0.4.5](https://img.shields.io/badge/Version-0.4.5-blue?style=for-the-badge&logo-vercion)
+![Version - 0.4.5](https://img.shields.io/badge/Version-0.4.5-blue?style=for-the-badge)
 
 ## on development
 
