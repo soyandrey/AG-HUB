@@ -1,7 +1,7 @@
 # AG-HUB
 [![Build Status](https://img.shields.io/github/forks/soyandrey/AG-HUB.svg?style=for-the-badge)](https://github.com/soyandrey/AG-HUB)
 [![Build Status](https://img.shields.io/github/stars/soyandrey/AG-HUB.svg?style=for-the-badge)](https://github.com/soyandrey/AG-HUB)
-[![jkl - Bar](https://img.shields.io/static/v1?label=jkl&message=Bar&color=2ea44f?style=for-the-badge&logo=appveyor)](https://)
+[![jkl - Bar](https://img.shields.io/static/v1?label=jkl&message=Bar&color=2ea44fv?style=for-the-badge)](https://)
 ## on development
 
 the especial hub for agexploit
